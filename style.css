@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
 
+/* /////////////////////////////////////// * \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +8,7 @@
     font-family: 'Inter', sans-serif;
 }
 
+/* /////////////////////////////////////// VARIABLES \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 :root {
     --colour-teal: #318EC2;
     --colour-lilac: #B5A8F0;
@@ -19,28 +21,90 @@
     --colour-black: #000000;
 }
 
+/* /////////////////////////////////////// OVERALL CONTAINER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 div.container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1.25fr 5fr;
     grid-template-rows: 1fr 6fr;
 }
 
-div.container > div.header {
-    background-color: aquamarine;
+/* /////////////////////////////////////// NAVIGATION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+div.container > div.nav {
+    background: linear-gradient(180deg, var(--colour-purple) 0%, var(--colour-blue) 91.15%);
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    color: var(--colour-white);
+    display: grid;
+    grid-template-rows: 1fr 2.5fr 2.5fr;
+    justify-content: center;
 }
 
-div.container > div.nav,
+ul.nav-logo {
+    /* background-color: rgb(0, 132, 255); */
+    display: flex;
+    align-items: center;
+}
+
+div.logo-title {
+    display: flex;
+}
+
+div.logo-title  > img {
+    width: 40px !important;
+}
+
+div.container > div.nav h1 {
+    font-weight: 900;
+    font-size: 32px;
+    padding-top: 8px;
+}
+
+div.container > div.nav .nav-items {
+    font-weight: bold;
+    font-size: 24px;
+    list-style: none;
+    margin: 12px 0;
+}
+
+div.container > div.nav .nav-items:hover {
+    color: #ffffffc3;
+    background-color: #0000002d;
+    width: fit-content;
+    padding: 0 16px 0 8px;
+    border-radius: 8px;
+}
+
+div.container > div.nav .first-nav-item:hover {
+    background-color: initial;
+    padding: 0;
+    color: #f9f9fcee;
+}
+
+div.container > div.nav .nav-items:first-child {
+    margin-top: 0;
+}
+
+div.container > div.nav .nav-items img {
+    margin-right: 8px;
+    width: 20px;
+}
+
+div.container > div.nav .nav-items p {
+    display: inline;
+}
+
+/* /////////////////////////////////////// HEADER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+div.container > div.header,
 div.container > div.main {
     grid-column: 2 / 3;
 }
 
-div.container > div.nav {
-    background-color: rgb(227, 127, 255);
+div.container > div.header {
+    background-color: var(--colour-white);
 }
 
+/* /////////////////////////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 div.container > div.main {
-    background-color: rgb(127, 136, 255);
+    background-color: var(--colour-light-grey);
 }
