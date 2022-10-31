@@ -102,6 +102,107 @@ div.container > div.main {
 
 div.container > div.header {
     background-color: var(--colour-white);
+    display: grid;
+}
+
+div.header-top {
+    display: grid;
+    grid-auto-flow: column;
+    margin: 0 48px;
+    grid-template-columns: 3fr 1fr;
+}
+
+div.header-top p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+div.header-top p:hover {
+    color: var(--colour-purple);
+}
+
+div.header-top > div > div.search-bar {
+    background-color: var(--colour-light-grey);
+    height: 20px;
+    min-width: 100px;
+    border-radius: 16px;
+    padding: 8px 16px;
+    margin: auto 8px;
+}
+
+div.header-top > div > div.search-bar:hover {
+    background-color: #c7ccd0;
+}
+
+div.header-top > div.search {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 40px 1fr;
+}
+
+div.header-top > div.search img {
+    margin: auto;
+    padding: 16px;
+}
+
+div.header-top > div.usr-center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 32px;
+}
+
+div.header-bottom {
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr;
+    margin-left: 48px;
+}
+
+div.header-bottom > div.logo-container {
+    display: grid;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+div.header-bottom > div.logo-container img {
+    padding: 0 0 8px 0;
+}
+
+div.header-bottom > div.welcome {
+    display: grid;
+}
+
+div.header-bottom > div.welcome p {
+    font-weight: bold;
+}
+
+div.header-bottom > div.welcome p:first-of-type {
+    font-size: 12px;
+}
+
+div.header-bottom > div.welcome p:last-of-type {
+    font-size: 18px;
+}
+
+div.header-bottom > div.btns {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+div.header-bottom > div.btns button {
+    background-color: var(--colour-teal);
+    width: 135px;
+    padding: 8px 16px;
+    border-radius: 16px;
+    color: var(--colour-white);
+    border: none;
+    font-weight: bold;
+}
+
+div.header-bottom > div.btns button:hover {
+    background-color: #1f6892;
 }
 
 /* /////////////////////////////////////// MAIN \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
