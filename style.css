@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --colour-teal: #318EC2;
+    --colour-lilac: #B5A8F0;
+    --colour-light-grey: #DEE6EC;
+    --colour-purple: #9F69B8;
+    --colour-blue: #4D8BCC;
+    --colour-dark-grey: #555555;
+    --colour-light-black: #333333;
+    --colour-white: #FFFFFF;
+    --colour-black: #000000;
+}
+
+div.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 6fr;
+}
+
+div.container > div.header {
+    background-color: aquamarine;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+div.container > div.nav,
+div.container > div.main {
+    grid-column: 2 / 3;
+}
+
+div.container > div.nav {
+    background-color: rgb(227, 127, 255);
+}
+
+div.container > div.main {
+    background-color: rgb(127, 136, 255);
+}
