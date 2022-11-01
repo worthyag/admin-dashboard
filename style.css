@@ -267,6 +267,7 @@ div.projects > div.box-container div.box-items h4:hover {
 div.projects > div.box-container div.box-items p {
     font-size: 14px;
     color: var(--colour-light-black);
+    margin-right: 8px;
 }
 
 div.box-container div.box-items div.box-icons {
